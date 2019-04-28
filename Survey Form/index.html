@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- script src="myscript.js"> -->
+        <link rel="stylesheet" href="styles.css">
+        <title>My Survey Form</title>
+    </head>
+    <body>
+        <!-- #1 -->
+        <h1 id="title">Survey Form</h1>
+        <!--/ #1 /-->
+        <!-- #2 -->
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <!--/ #2 /-->
+        <div id="form-outer">        
+            <!-- #3 -->
+            <form id="survey-form" method="GET">
+                <!-- #4 + 10 + 11 -->
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" class="right-tab" type="text" placeholder="Enter your name" required>
+                <!--/ #4 + 10 + 11 /-->
+                <!-- # 5 + 6 + 10 + 11 -->
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" class="right-tab" type="email" placeholder="Enter your email" required>
+                <!--/ #5 + 6 + 10 + 11 /-->
+                <!-- #7 + 8 + 9 + 10 + 11 -->
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" class="right-tab" type="number" placeholder="Enter your age" max="99" min="0"><br>
+                <!--/ #7 + 8 + 9 + 10 + 11 /-->
+                <!-- # 12 -->
+                <label id="status" for="status">Which option best describes your current role?</label>
+                <div class="right-tab">
+                    <select name="status" id="dropdown">
+                        <option></option>
+                        <option value="student">student</option>
+                        <option value="volunteer">volunteer</option>
+                        <option value="part-time">part-time</option>
+                        <option value="full-time">full-time</option>
+                    </select>
+                </div>
+                <!--/ # 12 /-->
+                <!-- #13 -->
+                <label for="radios">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <div class="right-tab" name="radios">
+                    <ul style="list-style: none;">
+                        <li><input type="radio" name="recommend" value="definitely">Definitely</li>
+                        <li><input type="radio" name="recommend" value="maybe">Maybe</li>
+                        <li><input type="radio" name="recommend" value="not sure">Not sure</li>
+                    </ul>
+                </div>
+                <!--/ #13 /-->
+                <!-- #14 -->
+                <label for="checks" id="checks">Things that should be improved in the future (Check all that apply):</label>
+                <div class="right-tab">
+                    <ul style="list-style: none;">
+                        <li><input type="checkbox" name="checks" value="front-end">Front-end Projects
+                        <li><input type="checkbox" name="checks" value="back-end">Back-end Projects</li>  
+                        <li><input type="checkbox" name="checks" value="data-visualization">Data Visualization</li>  
+                        <li><input type="checkbox" name="checks" value="challenges">Challenges</li>  
+                        <li><input type="checkbox" name="checks" value="open-source-community">Open Source Community</li>  
+                        <li><input type="checkbox" name="checks" value="gitter-help-rooms">Gitter help rooms</li>  
+                        <li><input type="checkbox" name="checks" value="videos">Videos</li>  
+                        <li><input type="checkbox" name="checks" value="city-meetups">City Meetups</li>  
+                        <li><input type="checkbox" name="checks" value="wiki">Wiki</li>  
+                        <li><input type="checkbox" name="checks" value="forum">Forum</li>  
+                        <li><input type="checkbox" name="checks" value="additional-courses">Additional Courses</li>  
+                    </ul>
+                </div>
+                <!--/ #14 /-->
+                <!-- #15 -->
+                <label for="comments" id="comments">Any Comments or Suggestions?</label>
+                <textarea class="right-tab" placeholder="Enter your comment here..."></textarea> 
+                <!--/ #15 /-->
+                <!-- #16 -->
+                <button type="submit" id="submit">Submit</button>
+                <!--/ #16 /-->
+            </form>
+            <!--/ #3 /-->
+        </div>
+    </body>
+</html>
